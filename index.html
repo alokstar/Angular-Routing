@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="demo">
+<head>
+    <meta charset="UTF-8">
+    <script src="angular.min.js"></script>
+    <script src="angular-route.min.js"></script>
+    <script src="script.js"></script>
+    <link href="bootstrap.css">
+    <title>Routing</title>
+</head>
+<body ng-controller="teracontroller">
+<div>
+    <h2 class="jumbotron" style="text-align: center;background-color: palegoldenrod"> Header</h2>
+</div>
+<div style="text-align: left;width: 28%;position: absolute;background-color:palegreen; height: 500px;padding: 5px">
+    <br>
+    <a href="#home">Home</a><br><br>
+    <a href="#courses">Courses</a><br><br>
+    <a href="#students">Students</a>
+</div>
+
+<div style="width: 70%; float: right;background-color:slategrey; height: 500px;padding: 5px">
+    <ng-view>
+    </ng-view>
+</div>
+
+</body>
+</html>
